@@ -44,7 +44,7 @@
                         let branch = childSnap.val();
                         if (branch.loginId === inputId && branch.password === password) {
                             found = true;
-                            window.location.href = `kitchen.html?branchId=${childSnap.key}&branchName=${encodeURIComponent(branch.name)}`;
+                            window.location.href = `https://sakshiflavor.github.io/KITCHEN-LOGIN/?branchId=${childSnap.key}&branchName=${encodeURIComponent(branch.name)}`;
                         }
                     });
                     if (!found) errorDiv.textContent = 'Invalid Login ID or Password.';
